@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rohan Singh | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-card: #0f172a;
+      --accent: #38bdf8;
+      --accent-2: #a78bfa;
+      --text-main: #e5e7eb;
+      --text-muted: #94a3b8;
+      --border-soft: rgba(255,255,255,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #020617, #020617 60%);
+      color: var(--text-main);
+      line-height: 1.6;
+      animation: fadeIn 1s ease;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+
+    header {
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      margin: 0;
+    }
+
+    header h1 span {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      color: var(--text-muted);
+      max-width: 700px;
+      margin-top: 16px;
+      font-size: 1.1rem;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 18px;
+      margin-top: 20px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- SECTION ---------- */
+
+    section {
+      background: linear-gradient(180deg, #0f172a, #020617);
+      border: 1px solid var(--border-soft);
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+
+    /* ---------- GRID ---------- */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    /* ---------- SKILLS ---------- */
+
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      background: rgba(56,189,248,0.15);
+      color: var(--accent);
+      transition: transform 0.2s ease;
+    }
+
+    .tag:hover {
+      transform: scale(1.08);
+    }
+
+    /* ---------- PROJECT CARD ---------- */
+
+    .project {
+      background: #020617;
+      border: 1px solid var(--border-soft);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #f8fafc;
+    }
+
+    .project a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 60px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Hi, I'm <span>Rohan Singh</span></h1>
+      <p>
+        BCA graduate with hands-on experience in IT support, service desk operations,
+        and L1/L2 infrastructure support. Actively transitioning into Cloud and Data roles.
+      </p>
+      <div class="links">
+        <a href="mailto:rohansinghthakur644@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/rohan-singh-644zack/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/RohanSingh644" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Experienced in SLA-driven IT environments delivering L1/L2 support, incident
+        management, service requests, access management, and documentation following ITIL processes.
+        Strong interest in Cloud Infrastructure, Monitoring, and Data Operations.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
+      <p><strong>LTI Mindtree – Cloud & Infrastructure Engineer (6 Months)</strong></p>
+      <ul>
+        <li>L1 infrastructure and operations support for enterprise environments</li>
+        <li>Incident, request, and escalation handling using ITIL workflows</li>
+        <li>System monitoring, documentation, and runbook preparation</li>
+        <li>Stakeholder communication and SLA adherence</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+      <div>
+        <span class="tag">C</span>
+        <span class="tag">C++</span>
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">NumPy</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Scikit-Learn</span>
+        <span class="tag">TensorFlow</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">Git & GitHub</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Linux</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="project">
+          <h3>Flipkart Review Analysis</h3>
+          <a href="https://github.com/RohanSingh644/flipkart_review_analysis" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+          <h3>Handwritten Digits Recognition</h3>
+          <a href="https://github.com/RohanSingh644/Handwritten_Digits_recognition" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+          <h3>Face Recognition</h3>
+          <a href="https://github.com/RohanSingh644/Face_recognition" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+          <h3>Customer Segmentation</h3>
+          <a href="https://github.com/RohanSingh644/customer_segmentation" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>BCA – Bhavans Vivekananda College – <strong>8.4 CGPA</strong></li>
+        <li>Intermediate – Vision Jr College – <strong>87.6%</strong></li>
+        <li>High School – Kakatiya Techno School – <strong>10 CGPA</strong></li>
+      </ul>
+    </section>
+
+    <footer>
+      © 2025 Rohan Singh • Built for GitHub Pages
+    </footer>
+
+  </div>
+</body>
+</html>
